@@ -21,7 +21,7 @@ html, body{
 }
 
 body{
-    background: url("/images/bg-pattern-top.svg") top left/40% no-repeat, url("/images/bg-pattern-bottom.svg") bottom right/40% no-repeat;
+    background: url("./images/bg-pattern-top.svg") top left/40% no-repeat, url("./images/bg-pattern-bottom.svg") bottom right/40% no-repeat;
 }
 
 main {
