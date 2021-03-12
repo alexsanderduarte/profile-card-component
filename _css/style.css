@@ -1,0 +1,100 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --font-bold: 700;
+    --font-light: 400;
+    --font-size: 18px;
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html, body{
+    background-color: var(--dark-cyan);
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: url("/images/bg-pattern-top.svg") top left/40% no-repeat, url("/images/bg-pattern-bottom.svg") bottom right/40% no-repeat;
+}
+
+main {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-column: 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "profile";    
+}
+
+.profile{
+    background-color: white;
+    border-radius: 15px;
+    grid-area: "profile";
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    height: 40%;
+}
+
+.picture {
+    text-align: center;
+}
+.picture img {
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    bottom: 50px;
+}
+
+.picture p {
+    position: relative;
+    font-weight: var(--font-light);
+    font-size: var(--font-size);
+    color: var(--dark-gray);
+    line-height: 35px;
+    bottom: 40px;
+}
+.picture span {
+    font-weight: var(--font-bold);
+    font-size: var(--font-size);
+    color: var(--very-dark-desaturated-blue);
+}
+.stats {
+    display: flex;
+    border-top: 1px solid #e0e0e0;
+    position: relative;
+    bottom: 20px;
+    padding-top: 20px;
+    justify-content: space-evenly;
+}
+
+.Followers, .Likes, .Photos {
+    text-align: center;
+    font-weight: var(--font-light);
+    color: var(--dark-gray);
+    line-height: 20px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.statsNumber {
+    font-weight: var(--font-bold);
+    color: var(--very-dark-desaturated-blue);
+    font-size: var(--font-size);
+    letter-spacing: 1px;
+}
+
+.attribution {
+    padding: 5px;
+}
